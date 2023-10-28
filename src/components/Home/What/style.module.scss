@@ -1,0 +1,60 @@
+.what {
+  padding-top: 6rem;
+  padding-bottom: 8.35rem;
+  height: 100vh;
+  background-color: black;
+
+  @media (max-width: 1024px) {
+    height: auto;
+  }
+}
+
+.whatContainer {
+  display: flex;
+  align-items: center;
+}
+
+.whatTextContainer {
+  max-width: 50%;
+
+  @media (max-width: 850px) {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.whatTitle {
+  margin-bottom: 3rem;
+  color: white;
+  font-size: 3.375rem;
+  letter-spacing: 0.225rem;
+}
+
+.whatDesc {
+  font-size: 1rem;
+  color: white;
+
+  b {
+    font-size: 1.125em;
+  }
+}
+
+.whatImgContainer {
+  width: 50%;
+
+  @media (max-width: 850px) {
+    display: none;
+  }
+}
+
+.whatImg {
+  position: relative;
+  width: 60%;
+  margin-left: auto;
+
+  &::before {
+    content: '';
+    display: block;
+    padding-top: 118.685%;
+  }
+}

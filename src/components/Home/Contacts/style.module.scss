@@ -1,0 +1,54 @@
+.contacts {
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+  background-color: black;
+
+  @media (max-width: 1024px) {
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 10rem;
+    padding-left: 2rem;
+  }
+}
+
+.margin {
+  margin-top: 4.5rem;
+
+}
+
+.contactsContainer {
+  display: flex;
+
+  @media(max-width: 1024px) {
+    flex-direction: column;
+  }
+}
+
+.contactsBlocks {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+
+  @media(max-width: 1024px) {
+    order: 2;
+
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+}
+
+.contactsFormContainer {
+  width: 60%;
+  padding: 0 2rem;
+
+  @media(max-width: 1024px) {
+    order: 1;
+
+    width: 100%;
+
+    margin-bottom: 1.5rem;
+    padding: 0;
+  }
+}
